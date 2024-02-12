@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Search</title>
+    <link rel="stylesheet" href="foot.css">
+</head>
+
+<body>
+    <div class="form">
+        <h1 class="search">Which Job are you Looking For?</h1>
+        <form id="frm" class="hidden" action="">
+            <input class='userinput' type="text" name="job" placeholder='Type Career Choice' value='' >
+            <input class='userinput' type="text" name="city" placeholder='Location of Job' value=''>
+            <input class='userinput' type="text" name="country" placeholder='Country' value='' >
+            <input class="find"type="button"  value="Find" onclick="getSearch(this.form);fetchData()" >
+    
+        </form>
+    </div>
+ 
+    <div class="parent"></div>
+
+<script src="foot.js"></script>
+</body>
+</html>

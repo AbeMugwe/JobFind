@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(219, 19, 52);
+
+}
+
+#frm{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    
+}
+.userinput{
+    height: 25px;
+    width: 250px;
+    border-radius: 8px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    font-weight: bold;
+    
+    
+}
+
+::placeholder{
+    color: black;
+    font-weight: bold;
+}
+
+.find{
+    height: 23px;
+    width: 80px;
+    margin-top: 3px;
+    background-color: rgb(219, 19, 52);
+    border-radius: 8px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.find:hover{
+    background-color: rgb(155, 29, 50) ;
+}
+
+.parent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.cardcontent{
+    margin-top: 20px;
+    margin-left: 50px;
+    background-color: rgb(41, 36, 36);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 50px;
+    width: 500px;
+    height: 200px;
+    align-items: center;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    transition: 2s;
+    
+    }
+.cardcontent:hover{
+    background-color: rgb(80, 68, 68);
+    border-radius: 50%;
+
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+    >img{
+        height: 80px;
+        width: 100px;
+        margin-bottom: 20px;
+        object-fit: contain;
+    }
+}
+.link:hover{
+    color: rgb(219, 19, 52) ;
+}
+
+.hidden{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 300px;
+    margin-left: 200px;
+}
+.search{
+    font-size: 4rem;
+    margin-top: 200px;
+    margin-left: 180px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+@keyframes slide {
+   from{top:-200px}
+   to{top: 0px;}
+}
+
+.search{
+    position: fixed;
+    animation-name: slide;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+    
+        
+        
+
+
+        
